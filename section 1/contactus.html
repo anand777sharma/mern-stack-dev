@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <title>contact us</title>
+    
+</head>
+<style>
+    /* @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Roboto+Slab&display=swap'); */
+
+    body { 
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+         align-items: center;
+        justify-content: center;
+        margin: 10px; 
+        /* background: url(https://static.vecteezy.com/system/resources/previews/002/037/924/original/abstract-blue-background-with-beautiful-fluid-shapes-free-vector.jpg); */
+        background: linear-gradient(rgba(255, 0, 0, 0.227), rgba(0, 0, 255, 0.238)), url(https://static.vecteezy.com/system/resources/previews/002/037/924/original/abstract-blue-background-with-beautiful-fluid-shapes-free-vector.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        backdrop-filter: blur(10px);
+
+    }
+
+    .form-title{
+        font-family: Roboto;
+        text-align: center;
+        font-size: 1.8em !important;
+    }
+
+    .myinput {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        border: none;
+    }
+
+    .mybtn {
+        background-color: rgb(231, 36, 221);
+        color: white;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+
+
+    }
+
+    .mycard {
+    
+        padding: 30px;
+        background-color: #dbf4fb;
+        /* display: flex; */
+        box-shadow: 6px 6px 10px 6px rgba(154, 154, 192, 0.127);
+        border-radius: 10px;
+        /* border: 3px solid gray */
+        width: 30%;
+
+    }
+    .center {
+        text-align: center;
+        /* display: none; */
+    }
+
+    .fontstyle {
+        /* font-family: 'Roboto Slab', serif; */
+        width: 100%;
+    }
+
+    h1 {
+        /* font-family: 'Roboto Slab', serif; */
+    }
+
+    /* .mycard h5,
+    label {
+        color: #134963;
+        /* x offset y-offset blur colour */
+        /* text-shadow: 2px 2px 2px rgb(170, 170, 205)
+    } */ 
+
+    .myinput:focus {
+        background-color: aqua;
+
+    }
+   
+</style>
+
+<body>
+
+    <h1 class="center form-title" > contact us</h1><br><br>
+    <div class="mycard">
+
+        <label> Name</label><br><br>
+        <input type="text" class="myinput"><br><br>
+        <label> Email</label><br><br>
+        <input type="text" class="myinput"><br><br>
+        <label> message</label><br><br>
+        <input type="text" class="myinput"><br><br>
+        <button class="mybtn">send message</button><br><br>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+             display:flex; 
+             min-height: 100vh;
+             align-items: center;
+             justify-content:center ;
+             margin: 0;
+             
+        }
+        .mycard{
+            background-color: rgb(249, 248, 246);
+            /* shorthandproerty */
+            border: 2px solid gray;
+            width: 30%;
+            /* margin:300px auto; */
+            /* syntx: x offset y-offset blur size color */
+             box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.466),-4px 4px 10px 2px rgba(0, 0, 0, 0.466);
+             padding: 100px;
+box-sizing: border-box;
+border-radius: 7px;
+        }
+        .myinput, .mybtn {
+            width: 100%;
+            padding: 10px;
+box-sizing: border-box;
+        }
+        .mybtn{
+            background-color: rgb(231, 36, 221);
+            color:white;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mycard">
+        <h3>Register here to continue</h3>
+        <hr>
+        <label>Email</label>
+        <input  class="myinput" placeholder="ENter email Address" value="example@gmail.com">
+        <br><br>
+        <label>course</label>
+        <select class="myinput">
+            <option>bcom</option>
+            <option>btech</option>
+            <option>MCA</option>
+        </select>
+        <br>
+        <label>Department</label>
+        <input class="myinput" list="dept">
+        <datalist id="dept">
+            <option>Computer science</option>
+            <option>IT</option>
+            <option>Mechanical</option>
+        </datalist>
+        <br>
+        <label> password </label>
+        <input class="myinput" type="password" placeholder="Enter secure password">
+        <br>
+        <button class="mybtn">summit</button>
+    </div>
+    <!-- <h1>another content</h1> -->
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Roboto+Slab&display=swap');
+
+    body {
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        /* background: url(https://static.vecteezy.com/system/resources/previews/002/037/924/original/abstract-blue-background-with-beautiful-fluid-shapes-free-vector.jpg); */
+        background:linear-gradient(rgba(255, 0, 0, 0.227), rgba(0, 0, 255, 0.238)),url(https://static.vecteezy.com/system/resources/previews/002/037/924/original/abstract-blue-background-with-beautiful-fluid-shapes-free-vector.jpg);
+        background-size:cover;
+        background-attachment: fixed;
+        /* backdrop-filter: blur(10px); */
+
+    }
+
+    .myinput {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        border: none;
+    }
+
+    .mybtn {
+        background-color: rgb(231, 36, 221);
+        color: white;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+
+
+    }
+
+    .mycard {
+        padding: 30px;
+        background-color: #dbf4fb;
+
+        box-shadow: 6px 6px 10px 6px rgba(154, 154, 192, 0.127);
+        border-radius: 10px;
+        /* border: 3px solid gray */
+
+    }
+
+    .fontstyle {
+        font-family: 'Roboto Slab', serif;
+        width: 100%;
+    }
+
+    h1 {
+        font-family: 'Roboto Slab', serif;
+    }
+
+    .mycard h5,
+    label {
+        color: #134963;
+        /* x offset y-offset blur colour */
+        text-shadow: 2px 2px 2px rgb(170, 170, 205)
+    }
+
+    .myinput:focus {
+        background-color: aqua;
+
+    }
+</style>
+
+<body>
+
+    <div class="mycard">
+        <h1 style="text-align: center;"><b><u>ADMISSION FORM</u></b></h1>
+        <br>
+        <label class="fontstyle">NAME</label>
+        <INPUT class="myinput"></INPUT>
+        <BR></BR>
+        <label class="fontstyle">FATHER'S NAME</label>
+        <INPUT class="myinput"></INPUT>
+        <label class="fontstyle">MOTHER'S NAME</label>
+        <INPUT class="myinput"></INPUT><br><br>
+        <label class="fontstyle">EMAIL</label>
+        <INPUT class="myinput"></INPUT>
+        <BR></BR>
+        <label class="fontstyle">PHONE NUMBER</label>
+        <input class="myinput" type="phonenumber">
+        <BR></BR>
+        <label class="fontstyle">ADDRESS</label>
+        <INPUT class="myinput"></INPUT>
+        <BR></BR>
+        <label class="fontstyle">DATE OF BIRTH</label>
+        <input class="myinput" type="date">
+        <BR></BR>
+        <label class="fontstyle">COURSE CHOOSEN</label>
+        <SELECT class="myinput">
+            <option value="">BCA</option>
+            <option value="">B.Com</option>
+            <option value="">B.Tech</option>
+            <option value="">M.Tech</option>
+            <option value="">MBA</option>
+            <option value="">MCA</option>
+            <option value="">MBBS</option>
+            <option value="">BJMC</option>
+            <option value="">DSTL</option>
+            <option value="">DSUC</option>
+        </SELECT><br><br>
+        <form action="/action.php">
+
+            <label class="fontstyle">ENTER NAME</label>
+            <input class="myinput" type="text" placeholder="enter name">
+            <br><BR>
+            <label class="fontstyle">ENTER PASSWORD</label>
+            <input class="myinput" type="password" placeholder="enter password">
+
+            <br>
+            <br>
+            <H5><B>ENTER BRANCH</B></H5>
+            <input class="myinput" type="radio" name="BRANCH">MECHANICAL
+            </BR>
+            <input class="myinput" type="radio" name="BRANCH">IT
+            <br>
+            <input class="myinput" type="radio" name="BRANCH">CS
+            </BR>
+            <input class="myinput" type="radio" name="BRANCH">CIVIL
+            <br>
+            <H5><B>SELECT SUBJECT</B></H5>
+            <label class="fontstyle" for="maths">
+                <input class="myinput" type="checkbox" value="maths" name="subject" id="1">maths
+            </label><br>
+            <label class="fontstyle" for="physics">
+                <input class="myinput" type="checkbox" value="physics" name="subject" id="2">physics
+            </label><br>
+            <label class="fontstyle" for="chemiestry">
+                <input class="myinput" type="checkbox" value="chemiestry" name="subject" id="5">chemiestry
+            </label class="fontstyle"><br>
+            <label class="fontstyle" for="biology">
+                <input class="myinput" type="checkbox" value="biology" name="subject" id="1">biology
+            </label><br><br>
+            <H5><B>SELECT YOUR CITY</B></H5>
+            <select class="myinput" name="city" id="">
+                <option value="lucknow">lucknow</option>
+                <option value="delhi">Delhi</option>
+                <option value="Agra">Agra</option>
+                <option value="Kanpur">Kanpur</option>
+                <option value="Chinni">Chinni</option>
+                <option value="Mumbai">Mumbai</option>
+            </select><br>
+            <BR>COURSE FEE- <u>70000</u></BR>
+            <b>
+                <h5> DISCLAIMER- AGAR FEES NAHI DI THO COLLAGE MAT AANA</h5>
+            </b>
+            <HR>
+            </HR>
+            <h5 class="fontstyle"><B>IN FEW SENTENCES WRITE DOWN WHY YOU WANT TO BECOME A STUDENT OF OUR COLLAGE</B>
+            </H5>
+            <textarea class="myinput" class="fontstyle" placeholder="please give your feedback">
+    </textarea>
+        </form>
+        <BR></BR>
+        <button class="mybtn">submit</button>
+    </div>
+</body>
+
+</html>

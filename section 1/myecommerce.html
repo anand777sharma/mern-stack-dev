@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>me ecommerse</title>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background: linear-gradient(to right, #ffffff49, #ffffff49), url(https://media.istockphoto.com/photos/blue-sky-background-and-white-clouds-soft-focus-and-copy-space-picture-id1128410927?k=20&m=1128410927&s=612x612&w=0&h=6d_L7Fxea-KaLzuEGIm7n1IbkRLwy9pNRVOlByPuDLg=);
+      background-size: cover;
+      background-attachment: fixed;
+      backdrop-filter: blur(10px);
+      height: 100vh;
+    }
+
+    .thumb {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+
+    }
+
+    .search {
+      padding: 10px 20px;
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 40px 0 0 40px;
+      border: none;
+    }
+
+    .mybtn {
+      border-radius: 0 40px 40px 0;
+    }
+
+    header {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.215), rgba(0, 0, 0, 0.136)),
+        url(https://images.ctfassets.net/hrltx12pl8hq/4gZs3L0N2jaXrQbQ43u2Wu/640f6874be59055af7a7fc38bb35a90d/01-sky-space_1542099218.jpg?fit=fill&w=480&h=270);
+      background-size: cover;
+      background-attachment: fixed;
+      backdrop-filter: blur(10px);
+    }
+
+    .mycard {
+      height: 200px;
+    }
+
+    .my-btn {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+    }
+    .add
+    {
+      padding: 0%;
+      margin-top: 3%;
+    
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <img src="https://bootstraplogos.com/wp-content/uploads/edd/2018/04/logo-1.png" height="15" alt="Anand"
+            loading="lazy" />
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link text-white " href="#">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">best seller</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Today's deals</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+
+      <!-- Right elements -->
+      <div class="d-flex align-items-center">
+        <!-- Icon -->
+        <a class="text-reset me-3" href="#">
+          <i class="fas fa-shopping-cart text-white"></i>
+        </a>
+
+        <!-- Notifications -->
+        <div class="dropdown">
+          <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+            data-mdb-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-bell text-white"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="#">get 70% off on latest deals</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">your order conformed</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">do you want to rate us</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Avatar -->
+        <div class="dropdown">
+          <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar"
+            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            <img src="https://cdn.britannica.com/56/199056-050-CCC44482/Jeff-Bezos-2017.jpg" class="rounded-circle"
+              height="25" alt="Black and White Portrait of a Man" loading="lazy" />
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+            <li>
+              <a class="dropdown-item" href="#">My profile</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Settings</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+  <header class="bg-dark">
+
+    <div class="container" style="padding: 100px;">
+      <p class="display-4 text-white text-center fw-bold">THE RIGHT CHOICE</p>
+      <!-- <div class="input-group rounded">
+          <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+          <span class="input-group-text border-0" id="search-addon">
+            <i class="fas fa-search text-white"></i>
+          </span>
+        </div> -->
+      <div style="display: flex;">
+        <input placeholder="Search for your need...." class="search">
+        <button class="btn btn-primary btn-lg mybtn"> <i class="fas fa-search"></i> </button>
+      </div>
+    </div>
+
+  </header>
+  <div class="container add">
+    <div class="card" style="width: 100%;">
+      <img src="https://impdb.org/images/d/dc/IM2_Stark_Jet.jpg" class="card-img-top"
+        alt="Sunset Over the Sea" />
+      <div class="card-body">
+        <p class="card-text">Make your dream come tru</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-6 col-xxl-3 mt-4">
+        <div class="card">
+          <div class="thumb"
+            style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/0f/OO-FLN.JPG);">
+          </div>
+          <!-- <img
+              src="https://store-images.s-microsoft.com/image/apps.6843.14289021587791584.b9937e17-71a6-4b7c-9b62-a2203c893d9c.0dba49db-6f9b-4aa2-8532-c12409d6e03b?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"
+              alt=""
+            /> -->
+
+          <div class="card-body mycard">
+            <p class="text-muted m-0">Adventure</p>
+            <h3>Business Jet</h3>
+
+            <button class="btn btn-primary mt-4 w-50 float-end my-btn"> <i class="fas fa-shopping-bag"></i> &nbsp; Buy
+              Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xxl-3 mt-4">
+        <div class="card">
+          <div class="thumb"
+            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Hawker_Beechcraft_850XP%2C_Private_JP7325778.jpg/220px-Hawker_Beechcraft_850XP%2C_Private_JP7325778.jpg');">
+          </div>
+          <!-- <img
+              src="https://image.api.playstation.com/cdn/EP0002/CUSA12085_00/SzdddrptQcyO3tU3O9ALDT77gpNUnRtP.png"
+              alt=""
+            /> -->
+
+          <div class="card-body mycard">
+            <p class="text-muted m-0">Adventure, Action</p>
+            <h3>BUSINESS JET</h3>
+
+            <button class="btn btn-primary mt-4 w-50 float-end my-btn"> <i class="fas fa-shopping-bag"></i> &nbsp; Buy
+              Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xxl-3 mt-4">
+        <div class="card">
+          <div class="thumb"
+            style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Air_Zoo_Learjet_II.JPG/220px-Air_Zoo_Learjet_II.JPG);">
+          </div>
+          <!-- <img
+              src="https://store-images.s-microsoft.com/image/apps.6843.14289021587791584.b9937e17-71a6-4b7c-9b62-a2203c893d9c.0dba49db-6f9b-4aa2-8532-c12409d6e03b?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"
+              alt=""
+            /> -->
+
+          <div class="card-body mycard">
+            <p class="text-muted m-0">Adventure</p>
+            <h3>BUSINESS JET</h3>
+
+            <button class="btn btn-primary mt-4 w-50 float-end my-btn"> <i class="fas fa-shopping-bag"></i> &nbsp; Buy
+              Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xxl-3 mt-4">
+        <div class="card">
+          <div class="thumb"
+            style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/78/OH-WII_CL604_pvt_%287950005490%29.jpg);">
+          </div>
+          <!-- <img
+              src="https://store-images.s-microsoft.com/image/apps.6843.14289021587791584.b9937e17-71a6-4b7c-9b62-a2203c893d9c.0dba49db-6f9b-4aa2-8532-c12409d6e03b?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"
+              alt=""
+            /> -->
+
+          <div class="card-body mycard">
+            <p class="text-muted m-0">Platformer</p>
+            <h3>BOMBIDIER CHALANGER </h3>
+
+            <button class="btn btn-primary mt-4 w-50 float-end my-btn"> <i class="fas fa-shopping-bag"></i> &nbsp; Buy
+              Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-xxl-3 mt-4">
+        <div class="card">
+          <div class="thumb"
+            style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Piaggio_P-180_Avanti_Rennes_2010_%28cropped%29.jpg/800px-Piaggio_P-180_Avanti_Rennes_2010_%28cropped%29.jpg);">
+          </div>
+          <!-- <img
+              src="https://store-images.s-microsoft.com/image/apps.6843.14289021587791584.b9937e17-71a6-4b7c-9b62-a2203c893d9c.0dba49db-6f9b-4aa2-8532-c12409d6e03b?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"
+              alt=""
+            /> -->
+
+          <div class="card-body">
+            <p class="text-muted m-0">Adventure</p>
+            <h3>Piaggio P.180 Avanti</h3>
+
+            <button class="btn btn-primary mt-4 w-50 float-end"> <i class="fas fa-shopping-bag"></i> &nbsp; Buy
+              Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xxl-3 mt-4">
+        <div class="card">
+          <div class="thumb"
+            style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOjQD72YptfjOzA9bouqAk5QgNHT2qiXEiBQ&usqp=CAU');">
+          </div>
+          <!-- <img
+              src="https://image.api.playstation.com/cdn/EP0002/CUSA12085_00/SzdddrptQcyO3tU3O9ALDT77gpNUnRtP.png"
+              alt=""
+            /> -->
+
+          <div class="card-body">
+            <p class="text-muted m-0">Adventure, Action</p>
+            <h3>LUSER DELUX</h3>
+
+            <button class="btn btn-primary mt-4 w-50 float-end"> <i class="fas fa-shopping-bag"></i> &nbsp; Buy
+              Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xxl-3 mt-4">
+        <div class="card">
+          <div class="thumb"
+            style="background-image: url(https://c8.alamy.com/comp/CWMMAF/dassault-falcon-7x-CWMMAF.jpg);">
+          </div>
+          <!-- <img
+              src="https://store-images.s-microsoft.com/image/apps.6843.14289021587791584.b9937e17-71a6-4b7c-9b62-a2203c893d9c.0dba49db-6f9b-4aa2-8532-c12409d6e03b?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"
+              alt=""
+            /> -->
+
+          <div class="card-body">
+            <p class="text-muted m-0">Adventure</p>
+            <h3>DASSUALT FALCON</h3>
+
+            <button class="btn btn-primary mt-4 w-50 float-end"> <i class="fas fa-shopping-bag"></i> &nbsp; Buy
+              Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xxl-3 mt-4">
+        <div class="card">
+          <div class="thumb"
+            style="background-image: url(https://i.pinimg.com/originals/38/ee/92/38ee9244d321d5cc9ea4ccb98751504f.jpg);">
+          </div>
+          <!-- <img
+              src="https://store-images.s-microsoft.com/image/apps.6843.14289021587791584.b9937e17-71a6-4b7c-9b62-a2203c893d9c.0dba49db-6f9b-4aa2-8532-c12409d6e03b?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"
+              alt=""
+            /> -->
+
+          <div class="card-body">
+            <p class="text-muted m-0">Platformer</p>
+            <h3>SATOLAS</h3>
+
+            <button class="btn btn-primary mt-4 w-50 float-end"> <i class="fas fa-shopping-bag"></i> &nbsp; Buy
+              Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-xxl-3 mt-4">
+        <div class="card">
+          <div class="thumb"
+            style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/0f/OO-FLN.JPG);">
+          </div>
+          <!-- <img
+              src="https://store-images.s-microsoft.com/image/apps.6843.14289021587791584.b9937e17-71a6-4b7c-9b62-a2203c893d9c.0dba49db-6f9b-4aa2-8532-c12409d6e03b?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"
+              alt=""
+            /> -->
+
+          <div class="card-body mycard">
+            <p class="text-muted m-0">Adventure</p>
+            <h3>Business Jet</h3>
+
+            <button class="btn btn-primary mt-4 w-50 float-end my-btn"> <i class="fas fa-shopping-bag"></i> &nbsp; Buy
+              Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xxl-3 mt-4">
+        <div class="card">
+          <div class="thumb"
+            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Hawker_Beechcraft_850XP%2C_Private_JP7325778.jpg/220px-Hawker_Beechcraft_850XP%2C_Private_JP7325778.jpg');">
+          </div>
+          <!-- <img
+              src="https://image.api.playstation.com/cdn/EP0002/CUSA12085_00/SzdddrptQcyO3tU3O9ALDT77gpNUnRtP.png"
+              alt=""
+            /> -->
+
+          <div class="card-body mycard">
+            <p class="text-muted m-0">Adventure, Action</p>
+            <h3>BUSINESS JET</h3>
+
+            <button class="btn btn-primary mt-4 w-50 float-end my-btn"> <i class="fas fa-shopping-bag"></i> &nbsp; Buy
+              Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xxl-3 mt-4">
+        <div class="card">
+          <div class="thumb"
+            style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Air_Zoo_Learjet_II.JPG/220px-Air_Zoo_Learjet_II.JPG);">
+          </div>
+          <!-- <img
+              src="https://store-images.s-microsoft.com/image/apps.6843.14289021587791584.b9937e17-71a6-4b7c-9b62-a2203c893d9c.0dba49db-6f9b-4aa2-8532-c12409d6e03b?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"
+              alt=""
+            /> -->
+
+          <div class="card-body mycard">
+            <p class="text-muted m-0">Adventure</p>
+            <h3>BUSINESS JET</h3>
+
+            <button class="btn btn-primary mt-4 w-50 float-end my-btn"> <i class="fas fa-shopping-bag"></i> &nbsp; Buy
+              Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xxl-3 mt-4">
+        <div class="card">
+          <div class="thumb"
+            style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/78/OH-WII_CL604_pvt_%287950005490%29.jpg);">
+          </div>
+          <!-- <img
+              src="https://store-images.s-microsoft.com/image/apps.6843.14289021587791584.b9937e17-71a6-4b7c-9b62-a2203c893d9c.0dba49db-6f9b-4aa2-8532-c12409d6e03b?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"
+              alt=""
+            /> -->
+
+          <div class="card-body mycard">
+            <p class="text-muted m-0">Platformer</p>
+            <h3>BOMBIDIER CHALANGER </h3>
+
+            <button class="btn btn-primary mt-4 w-50 float-end my-btn"> <i class="fas fa-shopping-bag"></i> &nbsp; Buy
+              Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-xxl-3 mt-4">
+        <div class="card">
+          <div class="thumb"
+            style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Piaggio_P-180_Avanti_Rennes_2010_%28cropped%29.jpg/800px-Piaggio_P-180_Avanti_Rennes_2010_%28cropped%29.jpg);">
+          </div>
+          <!-- <img
+              src="https://store-images.s-microsoft.com/image/apps.6843.14289021587791584.b9937e17-71a6-4b7c-9b62-a2203c893d9c.0dba49db-6f9b-4aa2-8532-c12409d6e03b?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"
+              alt=""
+            /> -->
+
+          <div class="card-body">
+            <p class="text-muted m-0">Adventure</p>
+            <h3>Piaggio P.180 Avanti</h3>
+
+            <button class="btn btn-primary mt-4 w-50 float-end"> <i class="fas fa-shopping-bag"></i> &nbsp; Buy
+              Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xxl-3 mt-4">
+        <div class="card">
+          <div class="thumb"
+            style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOjQD72YptfjOzA9bouqAk5QgNHT2qiXEiBQ&usqp=CAU');">
+          </div>
+          <!-- <img
+              src="https://image.api.playstation.com/cdn/EP0002/CUSA12085_00/SzdddrptQcyO3tU3O9ALDT77gpNUnRtP.png"
+              alt=""
+            /> -->
+
+          <div class="card-body">
+            <p class="text-muted m-0">Adventure, Action</p>
+            <h3>LUSER DELUX</h3>
+
+            <button class="btn btn-primary mt-4 w-50 float-end"> <i class="fas fa-shopping-bag"></i> &nbsp; Buy
+              Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xxl-3 mt-4">
+        <div class="card">
+          <div class="thumb"
+            style="background-image: url(https://c8.alamy.com/comp/CWMMAF/dassault-falcon-7x-CWMMAF.jpg);">
+          </div>
+          <!-- <img
+              src="https://store-images.s-microsoft.com/image/apps.6843.14289021587791584.b9937e17-71a6-4b7c-9b62-a2203c893d9c.0dba49db-6f9b-4aa2-8532-c12409d6e03b?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"
+              alt=""
+            /> -->
+
+          <div class="card-body">
+            <p class="text-muted m-0">Adventure</p>
+            <h3>DASSUALT FALCON</h3>
+
+            <button class="btn btn-primary mt-4 w-50 float-end"> <i class="fas fa-shopping-bag"></i> &nbsp; Buy
+              Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xxl-3 mt-4">
+        <div class="card">
+          <div class="thumb"
+            style="background-image: url(https://i.pinimg.com/originals/38/ee/92/38ee9244d321d5cc9ea4ccb98751504f.jpg);">
+          </div>
+          <!-- <img
+              src="https://store-images.s-microsoft.com/image/apps.6843.14289021587791584.b9937e17-71a6-4b7c-9b62-a2203c893d9c.0dba49db-6f9b-4aa2-8532-c12409d6e03b?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"
+              alt=""
+            /> -->
+
+          <div class="card-body">
+            <p class="text-muted m-0">Platformer</p>
+            <h3>SATOLAS</h3>
+
+            <button class="btn btn-primary mt-4 w-50 float-end"> <i class="fas fa-shopping-bag"></i> &nbsp; Buy
+              Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"></script>
+</body>
+
+</html>
